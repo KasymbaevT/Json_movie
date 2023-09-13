@@ -7,8 +7,12 @@ import java.util.List;
 
 public interface MovieService {
     Movie findById(int movieId);
+
     Movie findByName(String name);
+
     List<Movie> sortByDate();
+
     List<Movie> filterByGenre(Genre genre);
-    void updateById(int movieId,Movie movie);
+
+    void updateById(int movieId, Movie movie);
 }

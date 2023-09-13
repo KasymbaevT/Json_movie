@@ -5,13 +5,12 @@ import model.Movie;
 import model.enums.Genre;
 import service.MovieService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MovieServiceImpl implements MovieService {
     private static final String PATH = "movie.json";
     private MovieDao movieDao;
-    private final List<Movie> movies  = movieDao.readFromFile(PATH);
+    private final List<Movie> movies = movieDao.readFromFile(PATH);
 
     @Override
     // TODO: 14.09.2023 вернуть фильм по ID
